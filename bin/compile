@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+build_dir=$1
+cache_dir=$2
+env_dir=$3
+
+cd $build_dir
+
+# Install typescript globally using a hard coded version number
+npm install -g typescript@2.3.3
+
+# Link typescript into our project
+npm link typescript

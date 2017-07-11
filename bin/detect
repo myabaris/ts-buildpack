@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# This buildpack is always active
+echo "Typescript"
+exit 0
